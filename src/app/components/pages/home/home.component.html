@@ -1,0 +1,16 @@
+<ul>
+    <li *ngfor="let job of jobs">
+        <a routerLink="/job/{{job.id}}"></a>
+        <img [src]="job.imageUrl" [alt]="job.name">
+        <div class="content">
+            <div class="name">
+                {{job.name}}
+            </div>
+            <span class="favorite {{job.favorite?'':'not'}}"></span>
+            <div class="stars">
+                
+            </div>
+        </div>
+    </li>
+
+</ul>
