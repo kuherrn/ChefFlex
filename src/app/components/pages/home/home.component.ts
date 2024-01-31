@@ -9,9 +9,9 @@ import { JobService } from '../../../services/job.service';
 })
 export class HomeComponent implements OnInit {
 
-  job:Job[] = [];
+  jobs:Job[] = [];
   constructor(private api:JobService) {
-    this.job = api.getAll()
+    this.jobs = api.getAll()
   }
   ngOnInit(): void {
       

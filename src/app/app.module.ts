@@ -16,7 +16,6 @@ import { RatingModule } from 'ng-starrating';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
